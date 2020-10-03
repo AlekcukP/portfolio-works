@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "HelveticaNeueCyrBold";
+    src: url('./fonts/HelveticaNeueCyr-Bold.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrLight";
+    src: url('./fonts/HelveticaNeueCyr-Light.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrBlack";
+    src: url('./fonts/HelveticaNeueCyr-Black.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrItalic";
+    src: url('./fonts/HelveticaNeueCyr-Italic.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrRoman";
+    src: url('./fonts/HelveticaNeueCyr-Roman.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrThin";
+    src: url('./fonts/HelveticaNeueCyr-Thin.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyrUltraLight";
+    src: url('./fonts/HelveticaNeueCyr-UltraLight.ttf');
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@mixin fontBold {
+    font-family: "HelveticaNeueCyrBold";
+}
+@mixin fontLight {
+    font-family: "HelveticaNeueCyrLight";
+}
+@mixin fontBlack {
+    font-family: "HelveticaNeueCyrBlack";
+}
+@mixin fontItalic {
+    font-family: "HelveticaNeueCyrItalic";
+}
+@mixin fontRoman {
+    font-family: "HelveticaNeueCyrRoman";
+}
+@mixin fontThin {
+    font-family: "HelveticaNeueCyrThin";
+}
+@mixin fontUltraLight {
+    font-family: "HelveticaNeueCyrUltraLight";
+}

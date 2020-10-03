@@ -1,0 +1,33 @@
+$main_color: rgb(120,180, 90);
+
+@import "_fonts.scss";
+@import "_header.scss";
+@import "_banner.scss";
+@import "_footer.scss";
+
+
+body{
+    max-width: 1366px;
+    min-width: 320px;
+    padding: 0 113px;
+    margin: 13px auto;
+    background: url("/pics/png/flower.png"), url("/pics/svg/flower.svg"), url("/pics/svg/flower.svg");
+    background-repeat: no-repeat;
+    background-position: 20% 100%, 200% -470px, -105% 470px;
+}
+
+main{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 80px;
+}
+
+.dp-block{
+    display: block !important;
+}
+
+.display-slide{
+    opacity: 1 !important;
+}
+
+@import "_mobile.scss";

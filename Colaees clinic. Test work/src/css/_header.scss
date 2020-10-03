@@ -1,0 +1,157 @@
+.header{
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+
+    &_logo{
+
+        &__image{
+            height: 52px;
+        }
+        &__caption{
+            @include fontThin();
+            font-size: 11px;
+            margin-left: 30px;
+            text-transform: lowercase;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    &_nav{
+        display: flex;
+        z-index: 3;
+    }
+
+    &_menu{
+        display: block;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        margin: 0 0 5px 32px;
+
+        &__services{
+            position: relative;
+
+            &::after{
+                content: ''; 
+                position: absolute; 
+                left: 85px;
+                bottom: 3px;
+                border: 3px solid transparent;
+                border-top: 3px solid $main_color; 
+            }
+        }
+
+        
+        &>li>a{
+            @include fontThin();
+            font-size: 14px;
+            display: inline-block;
+            text-align: center;
+            margin-left: 35px;
+        }
+        
+        &>li:nth-child(2)>a{
+            border-bottom: 2px solid $main_color;
+        }
+    }
+
+}
+
+.header_contact{
+
+    position: relative;
+    width: 180px;
+    top: 15px;
+    right: -140px;
+
+    &>p{
+        @include fontRoman();
+        font-size: 14px;
+    }
+    &>a{
+        @include fontThin();
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+        margin-left: -30px;
+    }
+}
+
+
+.services{
+    position: absolute;
+    width: 250px;
+    background-color: rgb(220, 235, 210);
+    top: 60px;
+    left: 500px;
+    z-index: 2;
+
+    &_list{
+        display: none;
+        position: relative;
+        padding: 15px 0;
+        
+        &>li>a{
+            display: block;
+            @include fontThin();
+            font-size: 14px;
+            padding: 5px 25px;
+            position: relative;
+        }
+        &>li>a:hover{
+            background: rgba(243, 243, 243, 0.8);
+        }
+        &>li>a:hover::after, &>li>a:hover::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 1px;
+            background-color: $main_color;
+            right: 25px;
+            top: 10px;
+            }
+        &>li>a:hover::after{
+            transform: rotate(-45deg) translate(-5px,5px);
+        }
+        &>li>a:hover::before{
+            transform: rotate(45deg);
+        }
+    }
+
+    &_oncology{
+
+        &__list{
+            display: none;
+            position: absolute;
+            background-color: rgba(230, 230, 230, 0.9);
+            width: 250px;
+            padding: 20px 25px;
+            top: 0;
+            left: 250px;
+            height: 205px;
+
+                &>li{
+                    display: block;
+                    @include fontLight();
+                    font-size: 12px;
+                    padding: 5px;
+                }
+                &>li>a:hover{
+                    border-bottom: 2px solid $main_color;
+                }
+        }
+        
+    }
+}
+
+.rectangle::after{
+    content: ''; 
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    border: 20px solid transparent;
+    border-bottom: 10px solid rgb(220, 235, 210);
+    z-index: -1;
+}
